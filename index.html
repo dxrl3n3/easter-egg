@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Terminal Easter Egg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="normal-content">
+        <h1>easter-egg</h1>
+        <p>Press <strong>Ctrl + Shift + K</strong> to unlock the secret terminal!</p>
+            </div>
+    
+    <div class="easter-egg" id="easterEgg">
+        <div class="terminal">
+            <button class="close-btn" onclick="closeTerminal()">ESC</button>
+            <div class="terminal-header">
+                █▀▀ █▀▀ █▀▀ █▀█ █▀▀ ▀█▀   ▀█▀ █▀▀ █▀█ █▀▄▀█ █ █▄░█ ▄▀█ █░░<br>
+                ▄▄█ ██▄ █▄▄ █▀▄ ██▄ ░█░   ░█░ ██▄ █▀▄ █░▀░█ █ █░▀█ █▀█ █▄▄<br>
+                <div style="font-size: 12px; margin-top: 10px;">UNAUTHORIZED ACCESS DETECTED... JUST KIDDING! 😄</div>
+            </div>
+            <div class="terminal-content" id="terminalContent">
+                <div class="terminal-line">System initialized...</div>
+                <div class="terminal-line">Welcome to the secret developer console!</div>
+                <div class="terminal-line">Type 'help' for available commands.</div>
+                <div class="terminal-line">&nbsp;</div>
+            </div>
+            <div class="input-line">
+                <span class="prompt">dev@retro:~$</span>
+                <input type="text" class="terminal-input" id="terminalInput" placeholder="Enter command...">
+                <span class="cursor">|</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
